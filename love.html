@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Love Letter to My Amazing Girlfriend 💌</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Georgia', serif;
+            background: #6a0dad; /* Purple background */
+            color: #fff;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="%23ff6b81" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>'), auto;
+            position: relative;
+        }
+
+        /* Header */
+        header {
+            padding: 20px;
+            font-size: 2.5em;
+            color: #fff;
+            animation: fadeInDown 1.5s ease-in-out;
+        }
+
+        /* Content */
+        .content {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            line-height: 1.8;
+        }
+
+        /* Footer */
+        footer {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 10px;
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Animations */
+        @keyframes fadeInDown {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Pink Hearts */
+        .decoration {
+            position: absolute;
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        .heart {
+            width: 50px;
+            height: 50px;
+            animation: float 4s infinite ease-in-out;
+            fill: #ff6b81; /* Pink color */
+        }
+
+        .top-left {
+            top: 0;
+            left: 0;
+        }
+
+        .top-right {
+            top: 0;
+            right: 0;
+        }
+
+        .bottom-left {
+            bottom: 0;
+            left: 0;
+        }
+
+        .bottom-right {
+            bottom: 0;
+            right: 0;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0) rotate(0deg);
+            }
+            50% {
+                transform: translateY(-20px) rotate(20deg);
+            }
+            100% {
+                transform: translateY(0) rotate(0deg);
+            }
+        }
+
+        /* Yes/No Buttons */
+        .yes-no-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .yes-button, .no-button {
+            background: #ff6b81;
+            color: white;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .yes-button:hover {
+            background: #4caf50; /* Green for Yes */
+            transform: scale(1.1);
+        }
+
+        .no-button:hover {
+            background: #f44336; /* Red for No */
+            transform: scale(1.1);
+        }
+
+        /* Response Message */
+        .response-message {
+            margin-top: 20px;
+            font-size: 1.5em;
+            font-weight: bold;
+        }
+
+        /* Image Below Content */
+        .image-below {
+            margin-top: 20px;
+        }
+
+        .image-below img {
+            width: 200px; /* Adjust size as needed */
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Silver Wedding Rings */
+        .ring {
+            position: fixed; /* Fixed positioning to ensure visibility */
+            width: 50px;
+            height: 50px;
+            border: 5px solid #C0C0C0; /* Silver color */
+            border-radius: 50%;
+            pointer-events: none;
+            z-index: 9999; /* Ensure rings are on top */
+            box-shadow: 0 0 10px rgba(192, 192, 192, 0.8); /* Glow effect */
+        }
+
+        .ring-top-left {
+            top: 20px;
+            left: 20px;
+        }
+
+        .ring-top-right {
+            top: 20px;
+            right: 20px;
+        }
+
+        .ring-bottom-left {
+            bottom: 20px;
+            left: 20px;
+        }
+
+        .ring-bottom-right {
+            bottom: 20px;
+            right: 20px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Pink Hearts -->
+    <div class="decoration top-left">
+        <svg class="heart" viewBox="0 0 24 24">
+            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+        </svg>
+    </div>
+    <div class="decoration top-right">
+        <svg class="heart" viewBox="0 0 24 24">
+            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+        </svg>
+    </div>
+    <div class="decoration bottom-left">
+        <svg class="heart" viewBox="0 0 24 24">
+            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+        </svg>
+    </div>
+    <div class="decoration bottom-right">
+        <svg class="heart" viewBox="0 0 24 24">
+            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+        </svg>
+    </div>
+
+    <!-- Silver Wedding Rings -->
+    <div class="ring ring-top-left"></div>
+    <div class="ring ring-top-right"></div>
+    <div class="ring ring-bottom-left"></div>
+    <div class="ring ring-bottom-right"></div>
+
+    <header>
+        Love Letter 💌
+    </header>
+
+    <!-- Content -->
+    <div class="content">
+        <p>
+            My Dearest Love,
+        </p>
+        <p>
+            From the moment I met you, I knew you were someone extraordinary. Your beauty is beyond words—your eyes are like the stars, perfect and mesmerizing. Every time I look into them, I feel like I’m lost in a world of endless wonder. You are the most amazing person to be with, and I feel so lucky to have you in my life.
+        </p>
+        <p>
+            Your aura is so charming and charismatic. You light up every room you walk into, and everyone around you can’t help but feel your positive energy. You are destined for greatness, and I know you will achieve all your dreams and more. You are strong, intelligent, and kind—everything I admire in a person.
+        </p>
+        <p>
+            So, my love, I have a question for you. Do you believe in us as much as I do?
+        </p>
+    </div>
+
+    <!-- Yes/No Buttons -->
+    <div class="yes-no-buttons">
+        <button class="yes-button" onclick="showResponse('yes')">Yes</button>
+        <button class="no-button" onclick="showResponse('no')">No</button>
+    </div>
+
+    <!-- Response Message -->
+    <div class="response-message" id="responseMessage"></div>
+
+    <!-- Image Below Content -->
+    <div class="image-below">
+        <img src="your-image.jpg" alt="Our Picture">
+    </div>
+
+    <footer>
+        Made with Love 💖 
+    </footer>
+
+    <script>
+        // Function to show response
+        function showResponse(answer) {
+            const responseMessage = document.getElementById('responseMessage');
+            if (answer === 'yes') {
+                responseMessage.innerHTML = "Mujhe Pata hi tha hihihi 💖<br>I love you too!";
+            } else if (answer === 'no') {
+                responseMessage.innerHTML = "Hawwww 😢";
+            }
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Why You Are the Best</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Georgia', serif;
+            background: #6a0dad; /* Purple background */
+            color: #fff;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="%23ff6b81" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>'), auto;
+            position: relative;
+        }
+
+        /* Header */
+        header {
+            padding: 20px;
+            font-size: 2.5em;
+            color: #fff;
+            animation: fadeInDown 1.5s ease-in-out;
+        }
+
+        /* Content */
+        .content {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 10px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            text-align: left;
+            line-height: 1.8;
+        }
+   .back-button {
+            background: #ff6b81;
+            color: white;
+            padding: 15px 30px;
+            margin: 20px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .back-button:hover {
+            background: #ff4757;
+            transform: scale(1.1);
+        }
+
+
+        /* Footer */
+        footer {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 10px;
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Animations */
+        @keyframes fadeInDown {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Pink Hearts */
+        .decoration {
+            position: absolute;
+            z-index: 1;
+            pointer-events: none;
+        }
+
+        .heart {
+            width: 50px;
+            height: 50px;
+            animation: float 4s infinite ease-in-out;
+            fill: #ff6b81; /* Pink color */
+        }
+
+        .top-left {
+            top: 0;
+            left: 0;
+        }
+
+        .top-right {
+            top: 0;
+            right: 0;
+        }
+
+        .bottom-left {
+            bottom: 0;
+            left: 0;
+        }
+
+        .bottom-right {
+            bottom: 0;
+            right: 0;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0) rotate(0deg);
+            }
+            50% {
+                transform: translateY(-20px) rotate(20deg);
+            }
+            100% {
+                transform: translateY(0) rotate(0deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Pink Hearts -->
+    <div class="decoration top-left">
+        <svg class="heart" viewBox="0 0 24 24">
+            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+        </svg>
+    </div>
+    <div class="decoration top-right">
+        <svg class="heart" viewBox="0 0 24 24">
+            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+        </svg>
+    </div>
+    <div class="decoration bottom-left">
+        <svg class="heart" viewBox="0 0 24 24">
+            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+        </svg>
+    </div>
+    <div class="decoration bottom-right">
+        <svg class="heart" viewBox="0 0 24 24">
+            <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+        </svg>
+    </div>
+
+    <header>
+        Why You Are the Best 💖
+    </header>
+
+    <!-- Content -->
+    <div class="content">
+        <p>
+            Once upon a time, there was a tiny seed buried deep in the earth. The soil around it was tough, the environment harsh, and the odds of survival seemed slim. But this seed had a fire within it—a quiet, unyielding determination to grow. Day by day, it pushed through the darkness, fighting against the weight of the world above it. It faced storms, droughts, and countless challenges, but it never gave up. Slowly but surely, it broke through the surface, reaching for the sun. And when it finally bloomed, it wasn’t just any flower—it was the most radiant, resilient, and breathtaking blossom the world had ever seen.
+        </p>
+        <p>
+            That seed, my love, is you.
+        </p>
+        <p>
+            Your life has been a journey of breaking through the toughest soils—self-doubt, obstacles, and challenges that could have easily crushed anyone else. But you, like that seed, refused to stay buried. You pushed through the darkness with a quiet strength that inspires me every single day. You didn’t just survive; you blossomed into the most beautiful, kind, and extraordinary person I know.
+        </p>
+        <p>
+            You are the best because you’ve turned every struggle into a stepping stone. You’ve built a life for yourself, piece by piece, with your own hands and heart. You’ve created a career that reflects your talent and hard work, and you’ve done it all while staying true to your kindness and emotional intelligence. You’re like that flower—radiant, resilient, and unapologetically yourself.
+        </p>
+        <p>
+            And just like that flower, you continue to grow. You face every new challenge with courage and grace, and I know there’s nothing you can’t achieve. Your self-belief is your superpower, and it’s only a matter of time before you conquer every dream you’ve ever had.
+            
+            
+            
+            
+        </p>
+        <p>
+            So, my love, never forget why you’re the best. You’ve turned your struggles into strength, your pain into power, and your dreams into reality. You are a living, breathing example of what it means to rise, to shine, and to inspire. And that’s why I’m so proud to call you mine. 🌸💖
+        </p>
+    </div>
+ <button class="back-button" onclick="window.location.href='front.html'">Back to Home</button>
+
+    <footer>
+        Made with Love 💖 
+    </footer>
+
+</body>
+</html>

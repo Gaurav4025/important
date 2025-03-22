@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memories of Suha</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Lucida Handwriting', Cursive;
+            background: #6a0dad; /* Purple background */
+            color: #fff;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="%23ff6b81" d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>'), auto;
+            position: relative;
+        }
+
+        /* Header */
+        header {
+            padding: 20px;
+            font-size: 2.5em;
+            color: #fff;
+            animation: fadeInDown 1.5s ease-in-out;
+        }
+
+        /* Gallery */
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 10px;
+            padding: 20px;
+        }
+
+        .gallery img {
+            max-width: 25%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease;
+        }
+
+        .gallery img:hover {
+            transform: scale(1.05);
+        }
+
+        /* Back Button */
+        .back-button {
+            background: #ff6b81;
+            color: white;
+            padding: 15px 30px;
+            margin: 20px;
+            border: none;
+            border-radius: 50px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: background 0.3s ease, transform 0.3s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .back-button:hover {
+            background: #ff4757;
+            transform: scale(1.1);
+        }
+
+        /* Footer */
+        footer {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 10px;
+            color: #fff;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 -4px 15px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Animations */
+        @keyframes fadeInDown {
+            0% {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Memories of Suha 😊
+    </header>
+
+    <!-- Gallery -->
+    <div class="gallery">
+        <img src="1.jpeg" alt="Suha's Picture 1">
+        <img src="2.jpg.jpeg" alt="Suha's Picture 2">
+        <img src="3.jpg.jpeg" alt="Suha's Picture 3">
+        <img src="4.jpg.jpeg" alt="Suha's Picture 4">
+        <img src="5.jpg.jpeg" alt="Suha's Picture 5">
+        <img src="6.jpg.jpeg" alt="Suha's Picture 6">
+	<img src="7.jpg.jpeg" alt="Suha's Picture 7">
+        <img src="8.jpg.jpeg" alt="Suha's Picture 8">
+        <img src="9.jpg.jpeg" alt="Suha's Picture 9">
+        <img src="10.jpg.jpeg" alt="Suha's Picture 10">
+    </div>
+
+    <!-- Back Button -->
+    <button class="back-button" onclick="window.location.href='front.html'">Back to Home</button>
+
+    <footer>
+        Made with Love 💖 
+    </footer>
+</body>
+</html>
